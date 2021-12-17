@@ -10,7 +10,16 @@ function plate_text = getLicensePlateByRegion_ocr(img, type)
     % By default the ocr function's TextLayout will return a separate 
     % word for each set of letters that are separated by some space.
     ocr_words_letters = ocr(img, 'CharacterSet', 'A':'Z');
+    disp("Found letters:");
+    for i=1;size(ocr_words_letters.Words, 1)
+        disp("  " + i + ":  " + ocr_words_letters.Words{i});
+    end
+
     ocr_words_digits = ocr(img, 'CharacterSet', '0123456789');
+    disp("Found digits:");
+    for i=1;size(ocr_words_digits.Words, 1)
+        disp("  " + i + ":  " + ocr_words_digits.Words{i});
+    end
 
     switch type
         case PlateTypes.Default
