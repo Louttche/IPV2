@@ -1,5 +1,5 @@
 classdef PlateTypes
    enumeration
-      Default, Dutch, UK
+      Default, Dutch
    end
 end
