@@ -1,4 +1,4 @@
-function [BW,maskedImage] = segmentImage_autocluster_2(RGB)
+function [BW,maskedImage] = segmentImage_autocluster(RGB)
 %segmentImage Segment image using auto-generated code from imageSegmenter app
 %  [BW,MASKEDIMAGE] = segmentImage(RGB) segments image RGB using
 %  auto-generated code from the imageSegmenter app. The final segmentation
